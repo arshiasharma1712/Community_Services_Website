@@ -6,10 +6,10 @@ This project explores building a web platform to help families of children with 
 The goal of the project was to design a centralized platform where families could easily discover activities, support groups, and services available locally.
 
 ## What I Worked On
-- designed the overall concept and structure of the platform
-- researched local programs and resources for families with special needs
-- created a prototype layout to improve accessibility and discoverability
-- explored ways to organize information so families can easily find support services
+- Designed the overall concept and structure of the platform
+- Researched local programs and resources for families with special needs
+- Created a prototype layout to improve accessibility and discoverability
+- Explored ways to organize information so families can easily find support services
 
 ## Technologies
 - HTML
