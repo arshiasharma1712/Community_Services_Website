@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fort Bend County Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: url('https://cdn.glitch.global/fb1ad803-7828-46f3-840a-d3aa3c3fffbb/fort%20bend.jpeg?v=1725086362998') no-repeat center top;
+            background-size: cover;
+            height: 450px;
+            color: white;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+            height: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            margin-right: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            cursor: pointer;
+        }
+
+        .sidebar h3 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .content {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .content h1 {
+            margin-top: 0;
+        }
+
+        .content img {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="main-content">
+        <aside class="sidebar">
+            <div class="filter">
+                <h2 onclick="loadContent('home')">Home</h2>
+                <h3>Location</h3>
+                <ul>
+                    <li><a onclick="loadContent('katy')">Katy</a></li>
+                    <li><a onclick="loadContent('sugarland')">Sugar Land</a></li>
+                    <li><a onclick="loadContent('missouricity')">Missouri City</a></li>
+                    <li><a onclick="loadContent('richmond')">Richmond</a></li>
+                    <li><a onclick="loadContent('rosenberg')">Rosenberg</a></li>
+                    <li><a onclick="loadContent('stafford')">Stafford</a></li>
+                    <li><a onclick="loadContent('fresno')">Fresno</a></li>
+                    <li><a onclick="loadContent('fulshear')">Fulshear</a></li>
+                    <li><a onclick="loadContent('meadowsplace')">Meadows Place</a></li>
+                    <li><a onclick="loadContent('needville')">Needville</a></li>
+                    <li><a onclick="loadContent('orchard')">Orchard</a></li>
+                    <li><a onclick="loadContent('simonton')">Simonton</a></li>
+                    <li><a onclick="loadContent('thompsons')">Thompsons</a></li>
+                    <li><a onclick="loadContent('beasley')">Beasley</a></li>
+                    <li><a onclick="loadContent('pleak')">Pleak</a></li>
+                    <li><a onclick="loadContent('fairchilds')">Fairchilds</a></li>
+                    <li><a onclick="loadContent('newterritory')">New Territory</a></li>
+                    <li><a onclick="loadContent('greatwood')">Greatwood</a></li>
+                    <li><a onclick="loadContent('pecangrove')">Pecan Grove</a></li>
+                    <li><a onclick="loadContent('siensaranch')">Sienna Ranch</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="content" id="content">
+            <h1>Special Needs and Disability Services</h1>
+            <p>
+                Welcome! Discover a world of activities, events, organizations, and parks right around the corner. Simply choose your nearest location from the list below, and start exploring all that your community has to offer! :)
+            </p>
+            <img src="https://cdn.glitch.global/fb1ad803-7828-46f3-840a-d3aa3c3fffbb/activity.png?v=1725089368723" alt="Community Activity">
+        </div>
+    </section>
+
+    <script>
+        function loadContent(location) {
+            const content = document.getElementById('content');
+            let title = '';
+            let activities = '';
+
+            switch(location) {
+                case 'katy':
+                    title = 'Activities in Katy';
+                    activities = '<ul><li>Activity 1 in Katy</li><li>Activity 2 in Katy</li></ul>';
+                    break;
+                case 'sugarland':
+                    title = 'Activities in Sugar Land';
+                    activities = '<ul><li>Activity 1 in Sugar Land</li><li>Activity 2 in Sugar Land</li></ul>';
+                    break;
+                case 'missouricity':
+                    title = 'Activities in Missouri City';
+                    activities = '<ul><li>Activity 1 in Missouri City</li><li>Activity 2 in Missouri City</li></ul>';
+                    break;
+                case 'home':
+                    title = 'Special Needs and Disability Services';
+                    activities = '<p>Welcome! Discover a world of activities, events, organizations, and parks right around the corner. Simply choose your nearest location from the list below, and start exploring all that your community has to offer! :)</p><img src="https://cdn.glitch.global/fb1ad803-7828-46f3-840a-d3aa3c3fffbb/activity.png?v=1725089368723" alt="Community Activity">';
+                    break;
+                // Add cases for each location here...
+
+                default:
+                    title = 'Special Needs and Disability Services';
+                    activities = '<p>Welcome! Discover a world of activities, events, organizations, and parks right around the corner. Simply choose your nearest location from the list below, and start exploring all that your community has to offer! :)</p><img src="https://cdn.glitch.global/fb1ad803-7828-46f3-840a-d3aa3c3fffbb/activity.png?v=1725089368723" alt="Community Activity">';
+                    break;
+            }
+
+            content.innerHTML = `<h1>${title}</h1>${activities}`;
+        }
+    </script>
+</body>
+</html>
