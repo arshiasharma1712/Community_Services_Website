@@ -1,20 +1,37 @@
-# Community Website Passion Project
+# Community Services Website
 
 ## Overview
-This project explores building a web platform to help families of children with special needs find resources, programs, and support services in their community.
 
-The goal of the project was to design a centralized platform where families could easily discover activities, support groups, and services available locally.
+This repository contains a simple website prototype that organizes community activities and services by location.
 
-## What I Worked On
-- Designed the overall concept and structure of the platform
-- Researched local programs and resources for families with special needs
-- Created a prototype layout to improve accessibility and discoverability
-- Explored ways to organize information so families can easily find support services
+The website allows users to browse different cities and view resources available in that area. It demonstrates a basic interface built with HTML, CSS, and JavaScript that dynamically updates content based on user selection.
 
-## Technologies
-- HTML
-- CSS
+---
+
+## What I Built
+
+The website provides a simple interface where users can explore services by selecting a location from the sidebar.
+
+When a location is selected, the page dynamically updates to show activities and community resources available in that area.
+
+---
+
+## Features
+
+- sidebar navigation by location
+- dynamic content updates using JavaScript
+- simple single-page layout
+
+---
+
+## Technologies Used
+
+- HTML  
+- CSS  
 - JavaScript
 
-## Goal
-The long-term vision for this project is to build a platform that makes it easier for families of children with disabilities to discover community resources and support networks.
+---
+
+## Note
+
+This project was developed as a prototype website exploring how community resources could be organized in one place. Some images were originally hosted on Glitch during development, so certain assets may not load in this version.
